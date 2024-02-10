@@ -1,0 +1,163 @@
+/* Slidesh */
+body {
+ 	font-family: Arial, Helvetica, sans-serif;
+}
+
+* .image-slideshow {
+    background-color:#FAC50A;
+ 	  width: 900px;
+    height: 450px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div {
+ background-color:#FFE380;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#fact {
+  background-color:#FFE380;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #0D38D3;
+}
+
+header {
+  padding-top: 50px;   
+  padding-left: 30%;
+  padding-right: 30%;
+  margin: 1px;         
+}
+
+.p1 {
+  padding-bottom: 10px;
+}
+
+main { 
+  padding-top: 25px;      
+  padding-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+ 
+  margin-left: 10%;
+  margin-right: 10%;          
+  
+}
+
+/* STYLE TEXT */
+h1 {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: #43d6b9ff;
+  line-height: 60px;
+  letter-spacing: 12px;
+ 
+  margin: 2px;
+}
+
+h2 {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 35px;
+  text-align: center;
+  color: #43d6b9ff;
+  line-height: 1.3em;
+  letter-spacing: 3px;
+  
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  color: #0D38D3;
+  line-height: 1.3em;
+  
+  padding-bottom: 15px;
+}
+
+
+
+.subtitle{
+  text-align: center;
+  font-size: 25px;
+  
+  padding-top: 20px;
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  
+  padding-top: 10px;
+}
+
+a {
+  color: #43d6b9ff;
+  text-decoration: none;
+}
+  
+
+
+
+.image-slideshow > div {
+ 	width: 900px;
+  height: 450;
+ 	animation: move 10s ease-in-out 0s infinite alternate;
+    display:inline-block;
+  
+}
+
+@keyframes move {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(0); }
+  35% { transform: translateX(-900px); }
+  65% { transform: translateX(-900px); }
+  75% { transform: translateX(-1800px); }
+  100% { transform: translateX(-1800px); } 
+}
+
+/* STYLE NAV BAR */
+ul.nav-bar {
+  list-style-type: none;        
+  overflow: hidden;
+  
+  background-color: #43d6b9ff;
+  border-style: solid;
+  border-color: #0D38D3;
+  padding: 10px; /* increased by 5px */
+
+}
+
+li.nav-item {
+  display: inline;       
+  float: right;           
+  padding: 5px;
+}
+
+li.nav-item a {   
+  font-size: 20px;
+  color: #0D38D3;
+  
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+li.nav-item a:hover {
+  background-color: #0D38D3;
+  color: #fdd946;
+}
